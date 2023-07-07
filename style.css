@@ -3,14 +3,25 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-none {
+    display: none;
 }
 
 h1 {
     text-align: center;
 }
 
+#display-end-game {
+    text-align: center;
+}
+
 #content {
-    margin-top: 300px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,13 +33,13 @@ line {
 
 table {
     border-collapse: collapse;
+    position: relative;
 }
 
 table td {
     width: 100px;
     height: 100px;
     text-align: center;
-    font-size: 48px;
     cursor: pointer;
     border: 5px solid white;
 }
@@ -53,7 +64,13 @@ table td:last-child {
     border-right: none;
 }
 
-.winning-line {
-    background-color: white;
-    z-index: 1;
+button {
+    margin-top: 80px;
+    background-color: #323232;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: 5px solid white;
+    padding: 8px;
+    cursor: pointer;
 }
